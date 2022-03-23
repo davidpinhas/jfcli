@@ -21,13 +21,19 @@ Ping example:
 
 ::
 
-    $ jfcli testart --user david --password password --ping
+    $ python3 jfcli -s server -u david -p password -a ping
 
 System version example:
 
 ::
 
-    $ jfcli testart --user david --password password --version
+    $ python3 jfcli -s server -u david -p password -a version
+
+Storage info example:
+
+::
+
+    $ python3 jfcli -s server -u david -p password -a storage_info
 
 Running Tests
 -------------
