@@ -5,7 +5,7 @@ with open('README.rst', encoding='UTF-8') as f:
 
 setup(
     name='jfcli',
-    version='0.0.2',
+    version='0.0.3',
     description='CLI for JFrog Artifactory',
     long_description=readme,
     author='David',
