@@ -81,8 +81,8 @@ def version_request():
     if response.data:
         json_data = response.data
         json_object = json.loads(json_data)
-        json_formatted_str = json.dumps(json_object, indent=2)
-        print(json_formatted_str)
+        json_formatted_str = json.dumps(json_object["version"], indent=2)
+        print("The Artifactory version is: " + json_formatted_str)
     else:
         print("ERROR: Failed to get version. Encountered error:\n %s" %
               (response.data.decode('utf-8')))
